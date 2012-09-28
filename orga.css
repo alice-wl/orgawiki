@@ -1,0 +1,15 @@
+div.dataplugin_entry dl dd {
+    /*float: left;*/
+    /*margin-left: 0.5em;*/
+	float: none;
+	margin-left: 10.5em;
+	width: auto;	
+}
+div.dataplugin_entry dl {
+    border: 1px solid __border__;
+    padding: 1em;
+    margin: 1em;
+    font-size: 90%;
+    overflow: auto;
+    width: 50%;
+}

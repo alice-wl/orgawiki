@@ -70,12 +70,13 @@
 /*____________ tables ____________*/
 
 .dokuwiki div.table {
-    width: 100%;
-    overflow-x: auto;
     margin-bottom: 1.4em;
 }
 .dokuwiki div.table table {
     margin-bottom: 0;
+}
+.dokuwiki div.table table tr {
+    background: white;
 }
 
 .dokuwiki table.inline {

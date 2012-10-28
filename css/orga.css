@@ -1,3 +1,14 @@
+#dokuwiki__content div.page {
+    overflow: visible;
+}
+#dokuwiki__content div.table {
+    overflow-x: visible;
+    margin-bottom: 1.4em;
+}
+.dokuwiki div.table table tr {
+    background: white;
+}
+
 #dokuwiki__aside div.dataplugin_entry dl dt {
 	width: auto;	
 }

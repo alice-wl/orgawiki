@@ -10,6 +10,7 @@ if (!defined('DOKU_INC')) die();
 <!-- ********** FOOTER ********** -->
 <div id="dokuwiki__footer"><div class="pad">
     <?php tpl_license(''); // license text ?>
+
     <div class="buttons">
         <?php
             tpl_license('button', true, false, false); // license button, no wrapper
@@ -21,4 +22,5 @@ if (!defined('DOKU_INC')) die();
     </div>
 </div></div><!-- /footer -->
 
-<?php tpl_includeFile('footer.html') ?>
+<?php
+tpl_includeFile('footer.html');

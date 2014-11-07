@@ -20,7 +20,7 @@ if (!defined('DOKU_INC')) die();
         <h1><?php
             // get logo either out of the template images folder or data/media folder
             $logoSize = array();
-            $logo = tpl_getMediaFile(array(':wiki:logo.png', 'images/logo.png'), false, $logoSize);
+            $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/logo.png'), false, $logoSize);
 
             // display logo and wiki title in a link to the home page
             tpl_link(
@@ -41,13 +41,13 @@ if (!defined('DOKU_INC')) die();
                 <h3 class="a11y"><?php echo $lang['user_tools']; ?></h3>
                 <ul>
                     <?php
-                        if ($_SERVER['REMOTE_USER']) {
+                        if (!empty($_SERVER['REMOTE_USER'])) {
                             echo '<li class="user">';
                             echo '<a href="/doku/user/'.$_SERVER['REMOTE_USER'].'">';
                             tpl_userinfo(); /* 'Logged in as ...' */
                             echo '</a>';
                             echo '</li>';
-                        }   
+                        }
                         tpl_action('admin', 1, 'li');
                         tpl_action('profile', 1, 'li');
                         tpl_action('register', 1, 'li');
